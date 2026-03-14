@@ -1,0 +1,167 @@
+/* ==UserStyle==
+@name           Dockhand Dark
+@namespace      https://github.com/StelianMorariu/losmuertos-stylus
+@version        1.0.0
+@description    Dockhand True Dark Mode
+@author         StelianMorariu
+@updateURL      https://cdn.jsdelivr.net/gh/StelianMorariu/losmuertos-stylus@main/styles/dockhand-true-dark.user.css
+==/UserStyle== */
+
+@-moz-document domain("your-dockhand-domain.com") {
+    /* Dockhand — true dark override v5 */
+    /* ── CSS custom property overrides ── */
+    :root {
+        --background: 0 0% 7% !important;
+        --muted: 0 0% 11% !important;
+        --card: 0 0% 9% !important;
+        --popover: 0 0% 10% !important;
+        --border: 0 0% 16% !important;
+        --input: 0 0% 11% !important;
+        --secondary: 0 0% 12% !important;
+        --accent: 0 0% 13% !important;
+        --sidebar-background: 0 0% 7% !important;
+        --sidebar-border: 0 0% 14% !important;
+        --sidebar-accent: 0 0% 11% !important;
+    }
+
+    /* ── Core ── */
+    body,
+    #__nuxt,
+    [data-v-app] {
+        background-color: #111111 !important;
+        color: #e2e2e2 !important;
+    }
+
+    /* ── Sidebar — data-attribute selectors from devtools ── */
+    [data-sidebar="sidebar"],
+    [data-sidebar="content"],
+    [data-slot="sidebar"],
+    [data-slot="sidebar-content"],
+    [data-slot="sidebar-header"],
+    [data-slot="sidebar-footer"] {
+        background-color: #111111 !important;
+        border-color: #222 !important;
+    }
+
+    /* Sidebar wrapper (the element with group-data-[variant=floating]) */
+    [group-data-\[variant\=floating\]],
+    aside,
+    nav {
+        background-color: #111111 !important;
+        border-color: #1e1e1e !important;
+    }
+
+    /* ── Header bar ── */
+    header {
+        background-color: #111111 !important;
+        border-bottom-color: #222 !important;
+    }
+
+    /* ── Main content area ── */
+    main,
+    [role="main"] {
+        background-color: #0d0d0d !important;
+    }
+
+    /* ── Data grid ── */
+    .data-grid {
+        background-color: #111111 !important;
+    }
+    .data-grid thead tr,
+    .data-grid thead th {
+        background-color: #111111 !important;
+        border-bottom-color: #252525 !important;
+        color: #999 !important;
+    }
+    .data-grid tbody tr {
+        background-color: transparent !important;
+    }
+    .data-grid tbody tr:hover {
+        background-color: #1c1c1c !important;
+    }
+
+    /* Expanded row — precise selectors from devtools */
+    .data-grid tbody tr.row-expanded td,
+    .data-grid tbody tr.row-expanded td.select-col,
+    .data-grid tbody tr.row-expanded td.actions-col {
+        background-color: #1a1a1a !important;
+    }
+
+    /* The detail panel row that follows an expanded row */
+    .data-grid tbody tr.row-expanded + tr > td {
+        background-color: #141414 !important;
+        border-color: #222 !important;
+    }
+
+    /* Inner container card inside expanded detail row */
+    .data-grid tbody tr.row-expanded + tr > td > div {
+        background-color: #181818 !important;
+        border-color: #252525 !important;
+    }
+
+    .data-grid td {
+        border-right-color: #1f1f1f !important;
+        border-bottom-color: #1f1f1f !important;
+    }
+
+    /* ── Modals & dialogs ── */
+    [role="dialog"],
+    [class*="DialogContent"],
+    [class*="SheetContent"] {
+        background-color: #1a1a1a !important;
+        border-color: #2a2a2a !important;
+    }
+
+    /* ── Dropdowns & popovers ── */
+    [data-radix-popper-content-wrapper] > div,
+    [class*="SelectContent"],
+    [class*="DropdownMenuContent"],
+    [class*="PopoverContent"],
+    [class*="CommandContent"],
+    [class*="TooltipContent"] {
+        background-color: #1e1e1e !important;
+        border-color: #2a2a2a !important;
+    }
+
+    /* ── Inputs ── */
+    input:not([type="range"]):not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+        background-color: #1a1a1a !important;
+        border-color: #2e2e2e !important;
+        color: #e2e2e2 !important;
+    }
+    input::placeholder,
+    textarea::placeholder {
+        color: #555 !important;
+    }
+
+    /* ── Tabs ── */
+    [role="tablist"] {
+        background-color: #161616 !important;
+        border-color: #252525 !important;
+    }
+
+    /* ── Terminal / log pane ── */
+    [class*="terminal"],
+    [class*="Terminal"],
+    [class*="xterm"] {
+        background-color: #0a0a0a !important;
+    }
+
+    /* ── Scrollbars ── */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #111;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #2e2e2e;
+        border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #444;
+    }
+}

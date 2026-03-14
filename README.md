@@ -6,9 +6,9 @@ Custom CSS overrides for the [Stylus](https://github.com/openstyles/stylus) brow
 
 ## Styles
 
-| Style | App | Description |
-|-------|-----|-------------|
-| [Dockhand Dark](https://cdn.jsdelivr.net/gh/StelianMorariu/losmuertos-stylus@main/styles/dockhand-true-dark.user.css) | [Dockhand](https://dockhand.dev) | True dark override — pushes all backgrounds to near-black (#111 and below), styles the sidebar, header, data grid, modals, dropdowns, inputs, tabs, terminal pane, and scrollbars |
+| Style | Description |
+|-------|-------------|
+| [Dockhand Dark](https://cdn.jsdelivr.net/gh/StelianMorariu/losmuertos-stylus@main/styles/dockhand-true-dark.user.css) | True Dark mode for [Dockhand](https://dockhand.pro/) — pushes all backgrounds to near-black (#111 and below), styles the sidebar, header, data grid, modals, dropdowns, inputs, tabs, terminal pane, and scrollbars |
 
 ---
 

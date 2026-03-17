@@ -1,0 +1,68 @@
+/* ==UserStyle==
+@name           Shlink Modern Dark
+@namespace      https://github.com/StelianMorariu/losmuertos-stylus
+@version        2.0.0
+@description    A clean, modern dark theme for the Shlink web client
+@author         StelianMorariu
+@updateURL      https://cdn.jsdelivr.net/gh/StelianMorariu/losmuertos-stylus@main/styles/shlink-modern-dark.user.css
+==/UserStyle== */
+
+@-moz-document domain("your-shlink-domain.com") {
+    /*
+     * Strategy: override Shlink's own --color-dm-* design tokens.
+     * The app applies these throughout via its own Tailwind/component CSS,
+     * so this is far more reliable than targeting class names.
+     */
+    :root {
+        /* ── Brand ── */
+        --color-dm-brand:           #4da6ff;   /* Shlink blue, lightened */
+        --color-dm-brand-dark:      color-mix(in srgb, black 20%, #4da6ff 80%);
+
+        /* ── Surfaces ── */
+        --color-dm-primary:         #16161e;   /* main content bg */
+        --color-dm-secondary:       #0f0f13;   /* deeper bg / sidebar */
+        --color-dm-main:            #0f0f13;   /* sidebar accent area */
+        --color-dm-active:          #1c1c26;   /* hover / active state */
+
+        /* ── Text ── */
+        --color-dm-text:            #e2e2f0;
+
+        /* ── Borders ── */
+        --color-dm-border:          #2a2a3a;
+        --color-dm-table-border:    #2a2a3a;
+
+        /* ── Inputs ── */
+        --color-dm-input:           #1c1c26;
+        --color-dm-disabled-input:  #22222e;
+        --color-dm-input-text:      #e2e2f0;
+        --color-dm-input-border:    #2a2a3a;
+
+        /* ── Table ── */
+        --color-dm-table-highlight: rgba(255, 255, 255, 0.04);
+    }
+
+    /* ── Font ── */
+    body {
+        font-family: "Inter", "Geist", system-ui, -apple-system, sans-serif !important;
+        -webkit-font-smoothing: antialiased !important;
+    }
+
+    /* ── Scrollbars ── */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #2a2a3a;
+        border-radius: 999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(77, 166, 255, 0.35);
+    }
+}

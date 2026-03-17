@@ -9,6 +9,7 @@ Custom CSS overrides for the [Stylus](https://github.com/openstyles/stylus) brow
 | Style | Description |
 |-------|-------------|
 | [Dockhand Dark](https://cdn.jsdelivr.net/gh/StelianMorariu/losmuertos-stylus@main/styles/dockhand-true-dark.user.css) | True Dark mode for [Dockhand](https://dockhand.pro/) — pushes all backgrounds to near-black (#111 and below), styles the sidebar, header, data grid, modals, dropdowns, inputs, tabs, terminal pane, and scrollbars |
+| [Shlink Modern Dark](https://cdn.jsdelivr.net/gh/StelianMorariu/losmuertos-stylus@main/styles/shlink-modern-dark.user.css) | Modern dark theme for the [Shlink](https://shlink.io/) web client — dark surfaces with Shlink's blue accent, styles the navbar, sidebar, cards, tables, forms, buttons, badges, dropdowns, modals, tabs, pagination, alerts, and scrollbars |
 
 ---
 
